@@ -14,59 +14,6 @@ code {
   font-family: 'Rubik', sans-serif;
 }
 
-/* :root {
-  --tooltip-text-color: #FFFFFF;
-  --tooltip-background-color: #002F47;
-  --tooltip-margin: 20px;
-  --tooltip-arrow-size: 6px;
-} */
-
-/* .Tooltip-Tip {
-  width: 120px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  position: absolute;
-  border-radius: 3px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--tooltip-text-color);
-  background: var(--tooltip-background-color);
-  font-size: 16px;
-  font-family: 'rubik';
-  line-height: 22px;
-  z-index: 100;
-  white-space: nowrap;
-  font-weight: 500;
-} */
-
-/* .Tooltip-Tip::before {
-  content: " ";
-  left: 50%;
-  border: solid transparent;
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-width: var(--tooltip-arrow-size);
-  margin-left: calc(var(--tooltip-arrow-size) * -1);
-} */
-
-/* .Tooltip-Tip.right {
-  left: calc(100% + var(--tooltip-margin));
-  top: 50%;
-  transform: translateX(0) translateY(-50%);
-}
-
-.Tooltip-Tip.right::before {
-  left: calc(var(--tooltip-arrow-size) * -1);
-  top: 50%;
-  transform: translateX(0) translateY(-50%);
-  border-right-color: var(--tooltip-background-color);
-} */
-
 .box-shadow {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 6px;
