@@ -48,7 +48,7 @@ function BlogDetails() {
                         <p>If you’re ever feeling blue, you can whip out your journal to see all the people and activities that made you happy, and everything that made you proud. You might be shocked by how much of a mood booster this can be.</p>
                     </div>
                 </div>
-                <button className='w-[350px] h-[50px] bg-[#FD7175] flex items-center justify-center gap-x-[10px] rounded-[6px] text-[18px] text-[#FFFFFF] font-medium mb-[100px] buttonShaddow'><QuizImage /><p>Take Quiz</p></button>
+                <button className='w-[350px] h-[50px] bg-[#FD7175] flex items-center justify-center gap-x-[10px] rounded-[6px] text-[18px] text-[#FFFFFF] font-medium mb-[100px] buttonShaddow hover:bg-[#e36469]'><QuizImage /><p>Take Quiz</p></button>
             </div>
             <Footer />
         </>
