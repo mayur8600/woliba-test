@@ -7,8 +7,8 @@ import Home from '../images/Home'
 import HomeFilled from '../images/HomeFilled'
 import Solution from '../images/Solution'
 import SolutionFilled from '../images/SolutionFilled'
-import { Tooltip } from 'react-tooltip';
 import { useNavigate, useLocation } from "react-router-dom";
+import { Tooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';
 
 function SideBar() {
@@ -52,6 +52,8 @@ function SideBar() {
 
   useEffect(() => {
     switch (location.pathname) {
+      case '/': setPath('home')
+        break;
       case '/home': setPath('home')
         break;
       case '/product': setPath('product')
@@ -72,26 +74,26 @@ function SideBar() {
   const tooltipStyle = 'w-[120px] h-[40px] text-center bg-[#002F47] text-[#FFFFFF] font-medium text-[16px] z-[99999999] rounded-[3px] opacity-100'
   return (
     <div className='w-[80px] flex flex-col gap-y-[30px] pt-[65px] h-screen'>
-      <div onClick={() => navigate('/home')} className='w-[40px] mx-auto mt-[56px] cursor-pointer'>
-          <div data-tooltip-id="home" data-tooltip-offset={20} data-tooltip-delay-show={0} className={`${box} ${path === 'home' && 'bg-[#E5EAED]'}`} onMouseOver={() => handleMouseOver('home')} onMouseOut={handleMouseOut}>
-            {path === 'home' || (element === 'home' && isHovering) ? <HomeFilled /> : <Home />}
+      <div onClick={() => navigate('/')} className='w-[40px] mx-auto mt-[56px] cursor-pointer'>
+          <div data-tooltip-id="home" data-tooltip-offset={12} data-tooltip-delay-show={0} className={`${box} ${path === 'home' && 'bg-[#E5EAED]'}`} onMouseOver={() => handleMouseOver('home')} onMouseOut={handleMouseOut}>
+            {path === 'home' || (element === '/' && isHovering) ? <HomeFilled /> : <Home />}
           </div>
           <Tooltip className={tooltipStyle}  id="home" content="Home" place='right' />
       </div>
       <div onClick={() => navigate('/product')} className={item}>
-          <div data-tooltip-id="product" data-tooltip-offset={20} data-tooltip-delay-show={0} className={`${box} ${path === 'product' && 'bg-[#E5EAED]'}`} onMouseOver={() => handleMouseOver('cup')} onMouseOut={handleMouseOut}>
+          <div data-tooltip-id="product" data-tooltip-offset={12} data-tooltip-delay-show={0} className={`${box} ${path === 'product' && 'bg-[#E5EAED]'}`} onMouseOver={() => handleMouseOver('cup')} onMouseOut={handleMouseOut}>
             {path === 'product' || (element === 'cup' && isHovering) ? <CupFilled /> : <Cup />}
           </div>
           <Tooltip className={tooltipStyle}  id="product" content="Product" place='right' />
       </div>
       <div onClick={() => navigate('/solution')} className={item}>
-          <div data-tooltip-id="solution" data-tooltip-offset={20} data-tooltip-delay-show={0} className={`${box} ${path === 'solution' && 'bg-[#E5EAED]'}`} onMouseOver={() => handleMouseOver('sol')} onMouseOut={handleMouseOut}>
+          <div data-tooltip-id="solution" data-tooltip-offset={12} data-tooltip-delay-show={0} className={`${box} ${path === 'solution' && 'bg-[#E5EAED]'}`} onMouseOver={() => handleMouseOver('sol')} onMouseOut={handleMouseOut}>
             {path === 'solution' || (element === 'sol' && isHovering) ? <SolutionFilled /> : <Solution />}
           </div>
           <Tooltip className={tooltipStyle}  id="solution" content="Solution" place='right' />
       </div>
       <div onClick={() => navigate('/blog')} className={item}>
-          <div data-tooltip-id="blog" data-tooltip-offset={20} data-tooltip-delay-show={0} className={`${box} ${path === 'blog' && 'bg-[#E5EAED]'}`} onMouseOver={() => handleMouseOver('blog')} onMouseOut={handleMouseOut}>
+          <div data-tooltip-id="blog" data-tooltip-offset={12} data-tooltip-delay-show={0} className={`${box} ${path === 'blog' && 'bg-[#E5EAED]'}`} onMouseOver={() => handleMouseOver('blog')} onMouseOut={handleMouseOut}>
             {path === 'blog' || (element === 'blog' && isHovering) ? <BlogFilled /> : <Blog />}
           </div>
           <Tooltip className={tooltipStyle}  id="blog" content="Blog" place='right' />

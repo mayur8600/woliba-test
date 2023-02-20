@@ -10,7 +10,7 @@ function BlogLayout(props) {
             <div className='container'>
                 <img className='w-full h-[250px] image' src={require(props.location === 1 ? '../images/distraction.png' : props.location === 2 ? '../images/habbit.png' : '../images/balance.png')} alt='demo' />
                 <div className="overlay"></div>
-                <button onClick={() => navigate('/blogDetails')} className='bg-[#FD7175] text-[#FFFFFF] text-[18px] rounded-[6px] button'>Read Article</button>
+                <button onClick={() => navigate('/blogDetails')} className='bg-[#FD7175] text-[#FFFFFF] text-[18px] rounded-[6px] button hover:bg-[#e36469]'>Read Article</button>
             </div>
             <div className='flex justify-between w-full items-center h-[74px]'>
                 <div className='flex w-full px-[15px] h-[48px] justify-between'>

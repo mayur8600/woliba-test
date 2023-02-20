@@ -12,7 +12,7 @@ import Error from "./pages/Error";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/home",
+      path: "/",
       element: <Home />,
     },
     {
